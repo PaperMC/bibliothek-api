@@ -22,6 +22,8 @@ indra {
 
     publishSnapshotsTo("paperSnapshots", "https://repo.papermc.io/repository/maven-snapshots")
     publishReleasesTo("paperReleases", "https://repo.papermc.io/repository/maven-releases")
+
+    signWithKeyFromProperties("signingKey", "signingPassword")
 }
 
 repositories {
