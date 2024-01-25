@@ -37,7 +37,7 @@ jobs:
                     echo "STATUS=release" >> $GITHUB_ENV
                   fi
 #            - name: "publish snapshot"
-#              if: "${{ env.STATUS != 'release' && github.event_name == 'push' && github.ref == 'refs/heads/master' }}"
+#              if: "${{ env.STATUS != 'release' && github.event_name == 'push' && github.ref == 'refs/heads/main' }}"
 #              run: ./gradlew publish
 #              env:
 #                  ORG_GRADLE_PROJECT_paperSnapshotsUsername: "${{ secrets.PAPER_REPO_USERNAME }}"
